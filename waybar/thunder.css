@@ -1,0 +1,24 @@
+@define-color darkest #0A0A15;
+@define-color mantle #10101A;
+@define-color base #15151A;
+
+@define-color surface0 #1a1a20;
+@define-color surface1 #202025;
+@define-color surface2 #25252A;
+
+@define-color overlay0 #2A2A35;
+@define-color overlay1 #30303A;
+@define-color overlay2 #353540;
+
+@define-color subtext0 #C0C0E0;
+@define-color subtext1 #D0D0E0;
+@define-color text #E5E5F0;
+
+@define-color blue0 #4A47ED;
+@define-color blue1 #5475F7;
+
+@define-color green0 #28a064;
+@define-color green1 #3aa173;
+
+@define-color red0 #af3e59;
+@define-color red1 #b5476f;

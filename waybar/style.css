@@ -1,0 +1,31 @@
+@import url('thunder.css');
+
+* {
+    font-family: "JetBrains Mono";
+    font-size: 16px;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+window#waybar > * {
+    margin: 10px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    background: @base;
+}
+
+/* WORKSPACES */
+
+#workspaces button.active {
+    background: @surface0;
+    font-weight: bold;
+    color: @blue1;
+}
+
+/* TRAY */
+
+#tray {
+    margin-right: 20px;
+}

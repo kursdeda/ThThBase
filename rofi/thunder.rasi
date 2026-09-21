@@ -1,0 +1,53 @@
+* {
+    font: "JetBrains Mono 14";
+    background-color: transparent;
+}
+
+#window {
+    border-radius: 5px;
+    border: 2px;
+    border-color: #5475F7;
+    background-color: #15151A;
+    padding: 10px;
+    height: 600px;
+}
+
+#inputbar {
+    border-radius: 5px;
+    background-color: #1a1a20;
+    padding: 10px;
+    color: #fff;
+}
+
+entry,
+prompt {
+    text-color: #E5E5F0;
+}
+
+listview {
+    columns: 2;
+    scrollbar: false;
+    border: 0;
+
+}
+
+element {
+    border-radius: 5px;
+    padding: 8px;
+    margin: 2px;
+    text-color: #E5E5F0;
+}
+
+element selected.normal {
+    background-color: #1a1a20;
+    text-color: #5475F7;
+    border-color: #5475F7;
+    border: 2px;
+}
+
+element normal.normal,
+element alternate.normal {
+    background-color: #1a1a20;
+    text-color: #E5E5F0;
+
+}
