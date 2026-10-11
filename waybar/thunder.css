@@ -14,11 +14,11 @@
 @define-color subtext1 #D0D0E0;
 @define-color text #E5E5F0;
 
-@define-color blue0 #4A47ED;
-@define-color blue1 #5475F7;
-
-@define-color green0 #28a064;
-@define-color green1 #3aa173;
-
-@define-color red0 #af3e59;
-@define-color red1 #b5476f;
+@define-color red #af3e59;
+@define-color orange #af623e;
+@define-color yellow #938c05;
+@define-color green #28a064;
+@define-color cyan #0895b5;
+@define-color blue #4a47ed;
+@define-color purple #723fc9;
+@define-color pink #dc3e9d;

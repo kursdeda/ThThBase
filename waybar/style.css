@@ -1,8 +1,9 @@
 @import url('thunder.css');
 
 * {
-    font-family: "JetBrains Mono";
-    font-size: 16px;
+    font-family: "JetBrains Nerd";
+    font-weight: 700;
+    font-size: 14px;
 }
 
 window#waybar {
@@ -12,20 +13,36 @@ window#waybar {
 window#waybar > * {
     margin: 10px;
     margin-bottom: 0px;
-    border-radius: 5px;
-    background: @base;
+    border-radius: 15px;
+    background: transparent;
 }
 
 /* WORKSPACES */
 
-#workspaces button.active {
-    background: @surface0;
-    font-weight: bold;
-    color: @blue1;
+#workspaces button {
+    all: initial;
+    padding: 0 15px;
+    border-radius: 15px;
+    transition: all 0.25s ease-in-out;
+
 }
 
-/* TRAY */
+#workspaces button.active {
+    background: @surface0;
+}
 
-#tray {
-    margin-right: 20px;
+.modules-center, .modules-right, .modules-left > * {
+    background: @base;
+    color: @text;
+    padding: 2px;
+    border-radius: 15px;
+}
+
+#custom-artix {
+    color: @cyan;
+    padding-left: 2px;
+}
+
+.modules-right > * > *, .modules-left > * > * {
+    margin: 0 10px;
 }

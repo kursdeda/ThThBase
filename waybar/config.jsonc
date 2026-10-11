@@ -1,0 +1,78 @@
+// -*- mode: jsonc -*-
+{
+    "height": 48,
+    "spacing": 4,
+    "modules-left": [
+        "custom/artix",
+        "hyprland/window",
+        "tray"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "hyprland/language",
+        "clock"
+    ],
+
+    /* LEFT */
+
+    "custom/artix": {
+        "format": " ",
+        "on-click": "kitty bash -c \"fastfetch; exec bash\""
+    },
+
+    "hyprland/window": {
+        "format": "{title}",
+        "max-length": 14,
+        "icon": true,
+        "icon-size": 14,
+        "rewrite": {
+		    "": "  none"
+	    },
+        "on-click":"rofi -show drun"
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    },
+
+    /* CENTER */
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "persistent-workspaces": {
+            "*": 5
+        }
+    },
+
+    /* RIGHT */
+
+    "pulseaudio":{
+        "format": " {volume}%",
+        "on-click": "pavucontrol",
+        "tooltip": false
+    },
+
+    "network": {
+        "interface": "wlan0",
+        "format-wifi": "  {signalStrength}%",
+        "format-ethernet": "  {linkSpeed}",
+        "format-disconnected": "󰌙 ",
+        "interval": 2,
+        "tooltip": false
+    },
+
+    "hyprland/language":{
+        "format": "󰗊  {short}"
+    },
+
+    "clock": {
+        "format": "{:%H:%M:%S}",
+        "interval": 1,
+        "tooltip": false
+    }
+}
